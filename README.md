@@ -62,7 +62,8 @@ vistaracast/
 │ │ │ └── LiveStreamCard.tsx
 │ │ ├── organisms/
 │ │ │ ├── VideoList.tsx
-│ │ │ └── LiveStreamList.tsx
+│ │ │ ├── LiveStreamList.tsx
+│ │ │ └── Header.tsx
 │ │ └── templates/
 │ ├── hooks/
 │ └── styles/
