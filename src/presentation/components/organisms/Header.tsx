@@ -14,25 +14,25 @@ export function Header() {
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
-            <Link href="/" passHref legacyBehavior>
-              <NavigationMenuLink className="font-medium">
+            <NavigationMenuLink asChild>
+              <Link href="/" className="font-medium">
                 Home
-              </NavigationMenuLink>
-            </Link>
+              </Link>
+            </NavigationMenuLink>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href="/videos" passHref legacyBehavior>
-              <NavigationMenuLink className="font-medium">
+            <NavigationMenuLink asChild>
+              <Link href="/videos" className="font-medium">
                 Videos
-              </NavigationMenuLink>
-            </Link>
+              </Link>
+            </NavigationMenuLink>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href="/live" passHref legacyBehavior>
-              <NavigationMenuLink className="font-medium">
+            <NavigationMenuLink asChild>
+              <Link href="/live" className="font-medium">
                 Live
-              </NavigationMenuLink>
-            </Link>
+              </Link>
+            </NavigationMenuLink>
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
