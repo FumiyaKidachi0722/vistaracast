@@ -20,4 +20,8 @@ export class MockLiveStreamRepository implements ILiveStreamRepository {
   async list(): Promise<LiveStream[]> {
     return mockLiveStreams;
   }
+
+  async getById(id: string): Promise<LiveStream | null> {
+    return mockLiveStreams.find((s) => s.id === id) ?? null;
+  }
 }
