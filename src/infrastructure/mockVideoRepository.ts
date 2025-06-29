@@ -20,4 +20,8 @@ export class MockVideoRepository implements IVideoRepository {
   async list(): Promise<Video[]> {
     return mockVideos;
   }
+
+  async getById(id: string): Promise<Video | null> {
+    return mockVideos.find((v) => v.id === id) ?? null;
+  }
 }
