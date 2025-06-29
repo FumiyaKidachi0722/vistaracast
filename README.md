@@ -118,6 +118,12 @@ FIREBASE_SERVICE_ACCOUNT_JSON='{"type": "...", ...}'
 NEXT_PUBLIC_FIREBASE_CONFIG='{"apiKey":"...", ...}'
 ```
 
+### 動画配信・ライブ配信の利用方法
+
+1. [Livepeer Studio](https://www.livepeer.studio/) にサインアップし、API キーを取得して `LIVEPEER_API_KEY` に設定します。
+2. ダッシュボードから動画をアップロードするとアセット ID が発行されます。`/video/<id>` ページにアクセスすると再生を確認できます。
+3. ライブ配信を行う場合は Livepeer でストリームを作成し、取得したストリーム ID を `/live/<id>` に指定します。OBS などの配信ソフトからストリームの Ingest URL に送信するとそのまま視聴できます。
+
 ---
 
 ## ⚙️ 開発 & デプロイ
